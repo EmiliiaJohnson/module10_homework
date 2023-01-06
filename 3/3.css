@@ -1,0 +1,89 @@
+.screen {
+    padding: 10px 10px;
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 10px 20px 0 rgb(0 0 0 / 50%);
+}
+
+.action {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    height: 50px;
+    width: 85px;
+    border: none;
+    background-color: rgb(189 239 255);
+    transition: .2s;
+}
+
+.button:hover {
+    transform: scale(0.9);
+    transition: .3s;
+}
+
+.button:disabled {
+    background-color: rgb(226 226 226);
+}
+
+.button:disabled:hover {
+    background-color: rgb(226 226 226);
+    transform: none;
+}
+
+.clear {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-trash3' viewBox='0 0 16 16'%3e%3cpath d='M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z'/%3e%3c/svg%3e");
+    background-size: 40px;
+    border: none;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    width: 40px;
+    transition: .2s;
+}
+
+.clear:hover {
+    transform: scale(0.9);
+    transition: .3s;
+}
+
+.clear:active {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-trash3-fill' viewBox='0 0 16 16'%3e%3cpath d='M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z'/%3e%3c/svg%3e");
+}
+
+.input {
+    padding: 0px 5px;
+    height: 42px;
+    width: 50%;
+    border: 4px solid rgb(189 239 255);
+}
+
+.input:focus {
+    border: 4px solid rgb(72, 173, 255);;
+}
+
+.dialogueScreen {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid rgb(189 239 255);
+    height: 500px;
+    overflow: auto;
+}
+
+.message {
+    min-height: 30px;
+    max-height: fit-content;
+    max-width: 60%;
+    min-width: 20%;
+    border-radius: 15px;
+    border: 4px solid rgb(189 239 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px 10px;
+}
