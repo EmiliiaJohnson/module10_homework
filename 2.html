@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        .button {
+            margin-top: 30px;
+            cursor: pointer;
+            width: 300px;
+            height: 100px;
+            border: none;
+            border-radius: 20px;
+            background-color: rgb(255 178 250);
+            font-size: 26px;
+            color: #FFFFFF;
+            transition: .4s;
+        }
+        .button:hover {
+            border-radius: 30px;
+            background-color: rgb(178, 36, 167);
+            box-shadow: 8px 8px rgb(255 178 250);
+            transition: .4s;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+<button type="submit" class="button">Узнать размер экрана</button>
+<script>
+    const button = document.querySelector('.button');
+    button.addEventListener('click', () => {
+        alert(`Размер экрана: высота ${window.screen.height}, ширина ${window.screen.width}`);
+    });
+</script>
+</body>
+</html>
